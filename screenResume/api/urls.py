@@ -9,11 +9,13 @@ urlpatterns = [
     path('recruiter/<int:pk>/', views.RecruiterDetail.as_view()),
 
     # candidate
-    #path('candidate/', views.CandidateList.as_view()),
-    #path('candidate/<int:pk>/', views.CandidateDetail.as_view()),
+    path('candidate/', views.CandidateList.as_view()),
+    path('candidate/<int:pk>/', views.CandidateDetail.as_view()),
+    path('candidate-profile/', views.CandidateProfileList.as_view()),
+    path('candidate-profile/<int:pk>/', views.CandidateProfileDetail.as_view()),
 
     # Job vacancy
-    # path('plan/', PlanList.as_view())
+    path('vacancy/', views.VacancyList.as_view())
 
 
 ]
